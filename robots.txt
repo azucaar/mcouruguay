@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquear carpetas administrativas o sensibles (modifica si tienes estas carpetas)
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap del sitio
+Sitemap: https://mcouruguay.com/sitemap.xml
