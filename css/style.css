@@ -1,0 +1,279 @@
+.nav-item{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+#navbarNav{
+    margin-right: 150px;
+}
+
+
+
+
+.logo{
+    margin: 7px;
+    
+}
+
+.logo2{
+    font-size: 23px;
+}
+
+.navbar-toggler-icon{
+filter: invert(1);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+
+.titulo{
+
+    margin-top: 50px;
+
+}
+
+
+.inicio{
+    margin-left: 50px;
+}
+
+.boton{
+    margin-left: 60px;
+}
+
+
+.entero{
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+
+/* Limita el área de la card para que su contenido nunca se desborde */
+.entero .card {
+  overflow: hidden; /* Si necesitás evitar fugas de contenido */
+  margin: 30px;
+
+}
+
+/* Estilos para el contenedor de la imagen */
+.entero .imagen {
+  width: 10rem;          /* El ancho fijo que ya tenés */
+  height: 10rem;         /* Fijá también la altura para que todos los contenedores sean iguales */
+  overflow: hidden;      /* Evita que la imagen se salga del contenedor */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+/* Ajusta la imagen para que se adapte al contenedor sin distorsionarse */
+.entero .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;     /* Con 'contain' se muestra la imagen completa, aunque puede quedar con bordes vacíos */
+  object-position: center;
+}
+
+
+.imagen{
+    margin-right: 20px;
+}
+
+
+
+
+.numeros{
+  background-color: rgb(168, 166, 35);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px; /* Ajusta el tamaño según necesites */
+  height: 30px; /* Ajusta el tamaño según necesites */
+  font-size: 20px; /* Ajusta el tamaño de la fuente si es necesario */
+  color: white;
+}
+
+
+
+.accordion{
+  margin-left: 200px;
+  margin-top: 30px;
+  margin-right: 200px;
+  margin-bottom: 30px;
+}
+
+.titulo-empezar{
+
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  text-align: center;
+
+}
+
+
+
+
+.separador-gradiente {
+  height: 50px;
+  background: linear-gradient(to bottom, #ccc, #eaeaea, #ccc);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+      .feature-icon-small img {
+        width: 80px;       /* Ajusta el ancho deseado */
+        height: 80px;      /* Ajusta el alto deseado */
+        object-fit: contain; /* Se adapta sin distorsión */
+      }
+
+
+.metodos-titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+      .pago-icon img {
+        max-width: 80px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+
+
+
+
+
+.menu:hover{
+  background-color: rgb(41, 41, 41)!important;
+}
+
+
+
+.boton{
+  display: block;
+}
+
+
+
+.cabezillabk{
+  background-color: #362828;
+}
+
+
+
+
+
+
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIAQUERYS*/
+
+
+
+
+
+@media (max-width: 1350px) {
+  /* La tarjeta se apila en columna y se centra */
+  .entero .card {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Contenedor de la imagen con dimensiones fijas y más chico */
+  .entero .imagen {
+    order: -1 !important;           /* Mueve la imagen al inicio */
+    width: 10rem !important;         /* Nuevo ancho fijo */
+    height: 10rem !important;        /* Nuevo alto fijo */
+    margin: 0 auto 1rem !important;   /* Centrado horizontal */
+    display: block !important;
+    overflow: hidden;                /* Oculta cualquier porción de la imagen que sobresalga */
+  }
+
+  /* Ajuste de la imagen para que se mantenga dentro del contenedor */
+  .entero .imagen img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    /* Muestra la imagen completa sin distorsión; si prefieres llenar el contenedor usa "cover" */
+    object-position: center;
+  }
+
+  /* El cuerpo de la tarjeta se apila en columna y se centra */
+  .entero .card-body {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100%;
+  }
+
+  /* Grupo de botones centrado */
+  .entero .boton {
+    flex-direction: row !important; /* Puedes usar "column" si prefieres apilarlos verticalmente */
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  /* Márgenes para el contenedor "entero" */
+  .entero {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .numeros {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px; /* Ajusta el tamaño si es necesario */
+  }
+  .card {
+    position: relative; /* Asegura que el número se posicione dentro de la tarjeta */
+  }
+
+  .preguntas .container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .preguntas .accordion {
+    max-width: 800px;   /* Puedes ajustar: 800px, 900px según gusto */
+    margin: 0 auto;     /* CENTRAR el accordion */
+  }
+}
+
